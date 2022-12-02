@@ -37,35 +37,6 @@ my %input = (
     Z => { p1 => 'scissors', p2 => 'win' }
 );
 
-sub rules_p1 {
-    my ( $opp, $player ) = @_;
-    if ( $opp eq $player ) {
-        return 'draw';
-    }
-    elsif ( $game_rules{$opp}->{loses_to} eq $player ) {
-        return 'win';
-
-    }
-    else {
-        return 'lose';
-    }
-}
-
-sub which_move {
-    my ( $opp, $result ) = @_;
-    if ( $result eq 'Y' ) {    # draw
-        return $opp;
-    }
-    elsif ( $result eq 'X' ) {    #lose
-        return $game_rules{$opp}->{beats};
-    }
-    elsif ( $result eq 'Z' ) {
-        return $game_rules{$opp}->{loses_to};
-    }
-    else {
-        die "unknown desired result: $result";
-    }
-}
 my %ans;
 
 for my $game (@input) {
@@ -96,15 +67,42 @@ sub sec_to_hms {
         $s % 60, $s * 1000
     );
 }
+sub rules_p1 {
+    my ( $opp, $player ) = @_;
+    if ( $opp eq $player ) {
+        return 'draw';
+    }
+    elsif ( $game_rules{$opp}->{loses_to} eq $player ) {
+        return 'win';
+
+    }
+    else {
+        return 'lose';
+    }
+}
+
+sub which_move {
+    my ( $opp, $result ) = @_;
+    if ( $result eq 'Y' ) {    # draw
+        return $opp;
+    }
+    elsif ( $result eq 'X' ) {    #lose
+        return $game_rules{$opp}->{beats};
+    }
+    elsif ( $result eq 'Z' ) {
+        return $game_rules{$opp}->{loses_to};
+    }
+    else {
+        die "unknown desired result: $result";
+    }
+}
 
 
 ###########################################################
 
-=head1 Day 2: Rock Paper Scissors
+=head3 Day 2: Rock Paper Scissors
 
 =encoding utf8
-
-=head2 Discussion
 
 This wasn't the easiest to plan out. There were too many repeated
 logic lines that I wanted to consolidate. I made a bet on part 2 that

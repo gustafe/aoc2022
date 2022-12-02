@@ -57,6 +57,8 @@ sub sec_to_hms {
 }
 ###########################################################
 
+=pod 
+
 =head3 Day 1: Calorie Counting
 
 =encoding utf8

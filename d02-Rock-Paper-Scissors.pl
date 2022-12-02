@@ -47,7 +47,7 @@ for my $game (@input) {
         $round_scores{$result} + $shape_scores{ $input{$player}->{p1} } );
 
     # part 2
-    my $move = which_move( $opponent_moves{$opponent}, $player );
+    my $move = which_move( $opponent_moves{$opponent}, $input{$player}->{p2} );
     $ans{2}
         += ( $shape_scores{$move} + $round_scores{ $input{$player}->{p2} } );
 }
@@ -59,14 +59,10 @@ done_testing();
 say sec_to_hms( tv_interval($start_time) );
 
 ### SUBS
-sub sec_to_hms {
+sub sec_to_hms {  
     my ($s) = @_;
-    return sprintf(
-        "Duration: %02dh%02dm%02ds (%.3f ms)",
-        int( $s / ( 60 * 60 ) ),
-        ( $s / 60 ) % 60,
-        $s % 60, $s * 1000
-    );
+    return sprintf("Duration: %02dh%02dm%02ds (%.3f ms)",
+    int( $s / ( 60 * 60 ) ), ( $s / 60 ) % 60, $s % 60, $s * 1000 );
 }
 
 sub rules_p1 {
@@ -84,18 +80,18 @@ sub rules_p1 {
 }
 
 sub which_move {
-    my ( $opp, $result ) = @_;
-    if ( $result eq 'Y' ) {    # draw
+    my ( $opp, $want_to ) = @_;
+    if ( $want_to eq 'draw' ) {  
         return $opp;
     }
-    elsif ( $result eq 'X' ) {    #lose
+    elsif ( $want_to eq 'lose' ) {  
         return $game_rules{$opp}->{beats};
     }
-    elsif ( $result eq 'Z' ) {
+    elsif ( $want_to eq 'win' ) {
         return $game_rules{$opp}->{loses_to};
     }
     else {
-        die "unknown desired result: $result";
+        die "unknown want to: $want_to";
     }
 }
 

@@ -79,4 +79,8 @@ slurp in everything else.
 Of course, doing it like that will only give you the I<index> of what
 you want anyway, so you might just as well use a list from the get-go.
 
+Score: 2
+
+Puzzle rating: 3/5. Nothing special.
+
 =cut

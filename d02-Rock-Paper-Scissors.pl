@@ -107,4 +107,10 @@ logic lines that I wanted to consolidate. I made a bet on part 2 that
 didn't really pan out so had to rearrange a lot. This result is what's
 left after cleanup.
 
+Score: 2
+
+Puzzle rating: 2/5, personal opinion. There's too much logic scattered
+all over the place and even the "clever" solutions using modulo
+arithmetic just hardcode everything.
+
 =cut

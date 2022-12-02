@@ -62,4 +62,12 @@ tried to sort the %data hash per the sums of its elements but for some
 reason must have gotten the references wrong. Reworked to store the
 running sums directly.
 
+Update: I figured out that sorting like this
+
+for my $elf (sort {sum @{$data{$b}} <=> sum @{$data{$a}} } keys %data)
+
+you need to explicitely use sum() so as not to slurp in everything else.
+
+Of course, doing it like that will only give you the *index* of what you want anyway, so you might just as well use a list from the get-go.
+
 =cut

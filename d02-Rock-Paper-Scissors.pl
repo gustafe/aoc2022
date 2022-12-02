@@ -30,8 +30,8 @@ my %game_rules   = (
     paper    => { beats => 'rock',     loses_to => 'scissors' },
     scissors => { beats => 'paper',    loses_to => 'rock' }
 );
-my %opp   = ( A => 'rock', B => 'paper', C => 'scissors' );
-my %input = (
+my %opponent_moves = ( A => 'rock', B => 'paper', C => 'scissors' );
+my %input          = (
     X => { p1 => 'rock',     p2 => 'lose' },
     Y => { p1 => 'paper',    p2 => 'draw' },
     Z => { p1 => 'scissors', p2 => 'win' }
@@ -40,13 +40,14 @@ my %input = (
 my %ans;
 
 for my $game (@input) {
-    my ( $opp_move, $player ) = split( /\s+/, $game );
-    my $result = rules_p1( $opp{$opp_move}, $input{$player}->{p1} );
+    my ( $opponent, $player ) = split( /\s+/, $game );
+    my $result
+        = rules_p1( $opponent_moves{$opponent}, $input{$player}->{p1} );
     $ans{1} += (
         $round_scores{$result} + $shape_scores{ $input{$player}->{p1} } );
 
     # part 2
-    my $move = which_move( $opp{$opp_move}, $player );
+    my $move = which_move( $opponent_moves{$opponent}, $player );
     $ans{2}
         += ( $shape_scores{$move} + $round_scores{ $input{$player}->{p2} } );
 }
@@ -67,6 +68,7 @@ sub sec_to_hms {
         $s % 60, $s * 1000
     );
 }
+
 sub rules_p1 {
     my ( $opp, $player ) = @_;
     if ( $opp eq $player ) {
@@ -97,8 +99,8 @@ sub which_move {
     }
 }
 
-
 ###########################################################
+=pod
 
 =head3 Day 2: Rock Paper Scissors
 

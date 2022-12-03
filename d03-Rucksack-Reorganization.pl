@@ -74,11 +74,11 @@ say sec_to_hms( tv_interval($start_time) );
 ### SUBS
 sub priority {
     my ($c) = @_;
-    if ( ord($c) > 96 ) {
-        return ord($c) - 96;
+    if ( $c ge 'a' ) {
+        return ord($c) - ord('a') + 1;
     }
     else {
-        return ord($c) - 65 + 27;
+        return ord($c) - ord('A') + 27;
     }
 }
 

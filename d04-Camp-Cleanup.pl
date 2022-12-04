@@ -64,12 +64,8 @@ say sec_to_hms( tv_interval($start_time) );
 ### SUBS
 sub sec_to_hms {
     my ($s) = @_;
-    return sprintf(
-        "Duration: %02dh%02dm%02ds (%.3f ms)",
-        int( $s / ( 60 * 60 ) ),
-        ( $s / 60 ) % 60,
-        $s % 60, $s * 1000
-    );
+    return sprintf("Duration: %02dh%02dm%02ds (%.3f ms)",
+        int( $s / ( 60 * 60 ) ),( $s / 60 ) % 60,$s % 60, $s * 1000);
 }
 
 ###########################################################

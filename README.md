@@ -17,7 +17,7 @@ A typical AoC problem: massaging the input into a usable form is half the proble
 Score: 2
 
 Puzzle rating: 4/5, mostly because I'm proud of my input wrangling
----
+
 ### Day 4: Camp Cleanup
 
 Sundays are traditionally hard but it's early days and this was
@@ -29,7 +29,7 @@ and subtract those from the total.
 Score: 2
 
 Puzzle rating: 3/5
----
+
 ### Day 3: Rucksack Reorganization
 
 A bit fiddly with all the indices but not too hard once I worked it all out.
@@ -37,7 +37,7 @@ A bit fiddly with all the indices but not too hard once I worked it all out.
 Score: 2
 
 Puzzle rating: 3/5
----
+
 ### Day 2: Rock Paper Scissors
 
 This wasn't the easiest to plan out. There were too many repeated
@@ -50,7 +50,7 @@ Score: 2
 Puzzle rating: 2/5, personal opinion. There's too much logic scattered
 all over the place and even the "clever" solutions using modulo
 arithmetic just hardcode everything.
----
+
 ### Day 1: Calorie Counting
 
 Easy start, as expected. I had some issues with my first solution, I
@@ -72,4 +72,4 @@ you want anyway, so you might just as well use a list from the get-go.
 Score: 2
 
 Puzzle rating: 3/5. Nothing special.
----
+

@@ -82,4 +82,8 @@ complicated condition in part 1 to part 2 instead of looking at the
 obvious solution which was to find the ranges that I<didn't> overlap
 and subtract those from the total.
 
+Score: 2
+
+Puzzle rating: 3/5
+
 =cut

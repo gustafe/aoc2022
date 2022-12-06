@@ -5,10 +5,16 @@ I use Perl for all the solutions.
 Most assume the input data is in a file called `input.txt` in the same
 directory as the file.
 
----
-
 ## Solution comments in reverse order
 
+
+### Day 6: Tuning Trouble
+
+An easy problem. I'm happy I went with my first instinct (using the
+number of hash keys to detect (lack of) duplicates), along with
+parametrizing the window size, because that made part 2 trivial. That
+said my finishing standings were in the 16,000s despite a personal
+best finishing time this year.
 
 ### Day 5: Supply Stacks
 

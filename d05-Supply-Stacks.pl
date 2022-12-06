@@ -42,12 +42,14 @@ my %Map;
 my %positions;
 for my $e ( split( //, $indices ) ) {
     if ( $e =~ /\d+/ ) {
-        $Map{pt1}{$e}    = [];
-        $Map{pt2}{$e}    = [];
+        $Map{pt1}{$e} = [];
+	$Map{pt2}{$e} = [];
         $positions{$idx} = $e;
     }
     $idx++;
 }
+
+# populate the stacks
 while (@premap) {
     my @curr = split( //, shift @premap );
     for my $idx ( sort { $a <=> $b } keys %positions ) {
@@ -59,6 +61,7 @@ while (@premap) {
 
 }
 
+# execute move instructions
 for my $ins (@ins) {
     if ( $ins =~ /move (\d+) from (\d+) to (\d+)/ ) {
         my ( $amount, $src, $dst ) = ( $1, $2, $3 );

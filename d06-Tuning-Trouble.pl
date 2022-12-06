@@ -3,8 +3,8 @@
 # https://adventofcode.com/2022/day/6
 # https://gerikson.com/files/AoC2022/UNLICENSE
 ###########################################################
-
 use Modern::Perl '2015';
+
 # useful modules
 use List::Util qw/sum/;
 use Data::Dump qw/dump/;
@@ -16,43 +16,54 @@ my $start_time = [gettimeofday];
 #### INIT - load input data from file into array
 
 my $testing = 0;
-my $part2   = 0;
+
 my @input;
 my $file = $testing ? 'test.txt' : 'input.txt';
 open( my $fh, '<', "$file" );
 while (<$fh>) { chomp; s/\r//gm; push @input, $_; }
 
-### CODE
-my $WINDOW = $part2 ? 14 : 4;
-my @ans;
-for my $line (@input) {
-    my @signal = split //, $line;
-    my $start  = 0;
-    while ( $start + $WINDOW - 1 <= $#signal ) {
-        my %freq = map { $_ => 1 } @signal[ $start .. $start + $WINDOW - 1 ];
+my %parts = (
+	     1 => { window_size  => 4,
+		    test_results => '7,5,6,10,11',
+		    answer       => 1816 },
+	     2 => {
+		   window_size  => 14,
+		   test_results => '19,23,23,29,26',
+		   answer       => 2625 },);
 
-        if ( scalar keys %freq == $WINDOW ) {
-            push @ans, $start + $WINDOW;
-            last;
+### CODE
+for my $part ( sort keys %parts ) {
+    my $WINDOW = $parts{$part}->{window_size};
+    for my $line (@input) {
+        my @signal = split //, $line;
+        my $start  = 0;
+        while ( $start + $WINDOW - 1 <= $#signal ) {
+            my %freq
+                = map { $_ => 1 } @signal[ $start .. $start + $WINDOW - 1 ];
+
+            if ( scalar keys %freq == $WINDOW ) {
+                push @{ $parts{$part}->{ans} }, $start + $WINDOW;
+                last;
+            }
+            $start++;
         }
-        $start++;
     }
 }
-if ($testing) {
-    if ($part2) {
-        is( join( ',', @ans ), "19,23,23,29,26", "testing part2 ok" );
+
+for my $part ( sort keys %parts ) {
+    if ($testing) {
+        is( join( ',', @{ $parts{$part}->{ans} } ),
+            $parts{$part}->{test_results},
+            "testing part $part ok"
+        );
     } else {
-        is( join( ',', @ans ), "7,5,6,10,11", "testing part1 ok" );
-    }
-} else {
-    if ($part2) {
-        is( $ans[0], 2625, "Part 2: " . $ans[0] );
-    } else {
-        is( $ans[0], 1816, "Part 1: " . $ans[0] );
+        is( $parts{$part}->{ans}->[0],
+            $parts{$part}->{answer},
+            "Part $part: " . $parts{$part}->{answer}
+        );
     }
 }
-### FINALIZE - tests and run time
-# is();
+
 done_testing();
 say sec_to_hms( tv_interval($start_time) );
 

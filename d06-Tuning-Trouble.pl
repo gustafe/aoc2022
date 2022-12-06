@@ -78,5 +78,9 @@ parametrizing the window size, because that made part 2 trivial. That
 said my finishing standings were in the 16,000s despite a personal
 best finishing time this year.
 
+Score: 2
+
+Puzzle rating: 3/5, too easy to make this really interesting.
+
 =cut
 

@@ -8,6 +8,16 @@ directory as the file.
 ## Solution comments in reverse order
 
 
+### Day 7: No Space Left On Device
+
+This was a tough one. I had the right basic idea but had to search for some hints in the subreddit. Credit /u/Abigail:
+
+[https://github.com/Abigail/AdventOfCode2022/blob/master/Day\_07/solution.pl](https://github.com/Abigail/AdventOfCode2022/blob/master/Day_07/solution.pl)
+
+Score: **1**
+
+Rating: 4/7, tough but fair
+
 ### Day 6: Tuning Trouble
 
 An easy problem. I'm happy I went with my first instinct (using the

@@ -36,52 +36,49 @@ for my $row ( 0 .. $#input ) {
     }
 }
 
-#say dump $seen;
 
-# top, looking down
+
 for my $col ( 1 .. $max_c - 1 ) {
-    my $max_height = $Map->[0][$col];
+    # top, looking down
+    my $max_height_top = $Map->[0][$col];
     for my $row ( 1 .. $max_r - 1 ) {
-        if ( $Map->[$row][$col] > $max_height ) {
+        if ( $Map->[$row][$col] > $max_height_top ) {
             $seen->{$row}{$col}++;
-            $max_height = $Map->[$row][$col];
+            $max_height_top = $Map->[$row][$col];
         }
     }
-}
-
-# left, looking right
-for my $row ( 1 .. $max_r - 1 ) {
-    my $max_height = $Map->[$row][0];
-    for my $col ( 1 .. $max_c - 1 ) {
-        if ( $Map->[$row][$col] > $max_height ) {
-            $seen->{$row}{$col}++;
-            $max_height = $Map->[$row][$col];
-        }
-    }
-}
-
-# right, looking left;
-
-for my $row ( 1 .. $max_r - 1 ) {
-    my $max_height = $Map->[$row][$max_c];
-    for ( my $col = $max_c - 1; $col > 0; $col-- ) {
-        if ( $Map->[$row][$col] > $max_height ) {
-            $seen->{$row}{$col}++;
-            $max_height = $Map->[$row][$col];
-        }
-    }
-}
-
-# bottom, looking up
-for my $col ( 1 .. $max_c - 1 ) {
-    my $max_height = $Map->[$max_r][$col];
+    # bottom, looking up
+    my $max_height_bot = $Map->[$max_r][$col];
     for ( my $row = $max_r - 1; $row > 0; $row-- ) {
-        if ( $Map->[$row][$col] > $max_height ) {
+        if ( $Map->[$row][$col] > $max_height_bot ) {
             $seen->{$row}{$col}++;
-            $max_height = $Map->[$row][$col];
+            $max_height_bot = $Map->[$row][$col];
         }
     }
+
 }
+
+for my $row ( 1 .. $max_r - 1 ) {
+    # left, looking right
+    my $max_height_left = $Map->[$row][0];
+    for my $col ( 1 .. $max_c - 1 ) {
+        if ( $Map->[$row][$col] > $max_height_left ) {
+            $seen->{$row}{$col}++;
+            $max_height_left = $Map->[$row][$col];
+        }
+    }
+    # right, looking left
+    my $max_height_right = $Map->[$row][$max_c];
+    for ( my $col = $max_c - 1; $col > 0; $col-- ) {
+        if ( $Map->[$row][$col] > $max_height_right ) {
+            $seen->{$row}{$col}++;
+            $max_height_right = $Map->[$row][$col];
+        }
+    }
+
+}
+
+
 if ($testing) {
     say "top-left 5 (1,1): " . $seen->{1}{1};
     say "top-middle 5 (1,2): " . $seen->{1}{2};
@@ -97,9 +94,9 @@ for my $row ( keys %$seen ) {
     }
 }
 
-#say $count;
 
-## Part 2
+### Part 2
+
 my $distances;
 for my $row ( 1 .. $max_r - 1 ) {
     for my $col ( 1 .. $max_c - 1 ) {
@@ -140,7 +137,7 @@ for my $row ( 1 .. $max_r - 1 ) {
 }
 
 # find max distance
-my $max = 0;
+my $max_score = 0;
 for my $row ( 1 .. $max_r - 1 ) {
     for my $col ( 1 .. $max_c - 1 ) {
         my $d
@@ -148,15 +145,15 @@ for my $row ( 1 .. $max_r - 1 ) {
             * $distances->{$row}{$col}{down}
             * $distances->{$row}{$col}{left}
             * $distances->{$row}{$col}{right};
-        if ( $d > $max ) {
-            $max = $d;
+        if ( $d > $max_score ) {
+            $max_score = $d;
         }
     }
 }
 
 ### FINALIZE - tests and run time
 is( $count, 1807,   "Part 1: $count" );
-is( $max,   480000, "Part 2: $max" );
+is( $max_score,   480000, "Part 2: $max_score" );
 done_testing();
 say sec_to_hms( tv_interval($start_time) );
 

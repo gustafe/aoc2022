@@ -8,6 +8,14 @@ directory as the file.
 ## Solution comments in reverse order
 
 
+### Day 8: Treetop Tree House
+
+As usual, a bit fiddly with all the different directions and repeated code. 
+
+Score: 2
+
+Rating: 3/5
+
 ### Day 7: No Space Left On Device
 
 This was a tough one. I had the right basic idea but had to search for some hints in the subreddit. Credit /u/Abigail:

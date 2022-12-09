@@ -18,10 +18,7 @@ hard to debug.
 I then switched to a model where the tail directly followed the head
 through each step.
 
-The trick with `<=>` to compare chain movements was picked up
-from a couple of Perlers in the subreddit.
-
-Score: 2, barely
+Score: 2
 
 Rating: 4/5
 

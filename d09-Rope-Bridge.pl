@@ -5,6 +5,7 @@
 ###########################################################
 
 use Modern::Perl '2015';
+
 # useful modules
 use List::Util qw/sum min max/;
 use Data::Dump qw/dump/;
@@ -15,8 +16,7 @@ sub sec_to_hms;
 my $start_time = [gettimeofday];
 #### INIT - load input data from file into array
 
-my $part2   = 1;
-
+my $part2 = 0;
 my $testing = 0;
 
 my @input;
@@ -25,44 +25,59 @@ open( my $fh, '<', "$file" );
 while (<$fh>) { chomp; s/\r//gm; push @input, $_; }
 
 ### CODE
+my $chain_length = $part2?10:2;
+
+my @chain;
+
+for ( 1 .. $chain_length ) {
+    push @chain, { x => 0, y => 0 };
+}
+my $seen_tail->{0}{0}++;
 my %dirs = (
     U => { x => 0,  y => 1 },
     D => { x => 0,  y => -1 },
     R => { x => 1,  y => 0 },
     L => { x => -1, y => 0 }
 );
-my $chain_length = $part2 ? 10 : 2;
-my @chain;
-
-# initialize
-for my $idx ( 1 .. $chain_length ) {
-    push @chain, { x => 0, y => 0 };
-}
-
-my $seen_tail->{0}{0}++;
 
 for my $line (@input) {
     my ( $dir, $dist ) = $line =~ m/^(.) (\d+)$/;
-
-    my $dx = $dirs{$dir}->{x};
-    my $dy = $dirs{$dir}->{y};
     for my $step ( 1 .. $dist ) {
-        $chain[0]->{x} += $dx;
-        $chain[0]->{y} += $dy;
 
-        # move the chain
+        # move head
+        $chain[0]->{x} += $dirs{$dir}->{x};
+        $chain[0]->{y} += $dirs{$dir}->{y};
         for my $idx ( 1 .. $#chain ) {
             my $prev = $chain[ $idx - 1 ];
             my $curr = $chain[$idx];
+
+            # do we need to move the tail?
             if (   abs( $prev->{x} - $curr->{x} ) > 1
                 or abs( $prev->{y} - $curr->{y} ) > 1 )
             {
-                $curr->{x} += $prev->{x} <=> $curr->{x};
-                $curr->{y} += $prev->{y} <=> $curr->{y};
+                if ( $prev->{x} < $curr->{x} ) {
+                    $curr->{x} -= 1;
+                } elsif ( $prev->{x} == $curr->{x} ) {
+                    $curr->{x} = $curr->{x};
+                } elsif ( $prev->{x} > $curr->{x} ) {
+                    $curr->{x} += 1;
+                } else {
+                    die "invalid value: $curr->{x} vs $prev->{x}";
+                }
+                if ( $prev->{y} < $curr->{y} ) {
+                    $curr->{y} -= 1;
+                } elsif ( $prev->{y} == $curr->{y} ) {
+                    $curr->{y} = $curr->{y};
+                } elsif ( $prev->{y} > $curr->{y} ) {
+                    $curr->{y} += 1;
+                } else {
+                    die "invalid value: $curr->{y} vs $prev->{y}";
+                }
 
-                $chain[$idx] = { x => $curr->{x}, y => $curr->{y} };
-
-                # record the chain tail
+                $chain[$idx] = {
+                    x => $curr->{x},
+                    y => $curr->{y}
+                };
                 $seen_tail->{ $curr->{x} }{ $curr->{y} }++ if $idx == $#chain;
             }
         }
@@ -75,8 +90,10 @@ for my $x ( keys %{$seen_tail} ) {
         $count++;
     }
 }
+say $count;
+
 ### FINALIZE - tests and run time
-if ($part2) {
+if ($part2 ) {
     is( $count, 2661, "Part 2: $count" );
 } else {
     is( $count, 6284, "Part 1: $count" );
@@ -109,13 +126,8 @@ hard to debug.
 I then switched to a model where the tail directly followed the head
 through each step.
 
-The trick with C<< <=> >> to compare chain movements was picked up
-from a couple of Perlers in the subreddit.
-
-Score: 2, barely
+Score: 2
 
 Rating: 4/5
 
 =cut
-
-

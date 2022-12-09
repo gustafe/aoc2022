@@ -8,6 +8,23 @@ directory as the file.
 ## Solution comments in reverse order
 
 
+### Day 9: Rope Bridge
+
+Another challenging puzzle. My first attempt was to move the head
+directly, then "trace" the path of the tail. This worked fine for the
+example but my real input was off by some tens, which made it really
+hard to debug.
+
+I then switched to a model where the tail directly followed the head
+through each step.
+
+The trick with `<=>` to compare chain movements was picked up
+from a couple of Perlers in the subreddit.
+
+Score: 2, barely
+
+Rating: 4/5
+
 ### Day 8: Treetop Tree House
 
 As usual, a bit fiddly with all the different directions and repeated code. 

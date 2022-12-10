@@ -8,6 +8,16 @@ directory as the file.
 ## Solution comments in reverse order
 
 
+### Day 10: Cathode-Ray Tube
+
+Register Rodeo - but with timings!
+
+A fun problem. The test input was nicely designed to ensure I caught my off-by-one error.
+
+Score: 2
+
+Rating: 4/5
+
 ### Day 9: Rope Bridge
 
 Another challenging puzzle. My first attempt was to move the head

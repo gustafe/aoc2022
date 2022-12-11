@@ -8,6 +8,14 @@ directory as the file.
 ## Solution comments in reverse order
 
 
+### Day 11: Monkey in the Middle
+
+A fun Sunday problem!
+
+Score: 2
+
+Rating: 4/5
+
 ### Day 10: Cathode-Ray Tube
 
 Register Rodeo - but with timings!

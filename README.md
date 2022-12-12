@@ -8,6 +8,14 @@ directory as the file.
 ## Solution comments in reverse order
 
 
+### Day 12: Hill Climbing Algorithm
+
+Basic pathfinding. I really need to put these things into a library or somethnig.
+
+Score: 2
+
+Rating: 3/5
+
 ### Day 11: Monkey in the Middle
 
 A fun Sunday problem!

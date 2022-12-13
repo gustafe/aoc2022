@@ -2,11 +2,12 @@
 
 I use Perl for all the solutions.
 
-Most assume the input data is in a file called `input.txt` in the same
+Most assume the input data is in a file called \`input.txt\` in the same
 directory as the file.
 
 ## Solution comments in reverse order
 
+Running score: 23 / 26
 
 ### Day 13: Distress Signal
 

@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-cat README.head
+# cat README.head
 
 for f in `ls -r d*.pl`
 do

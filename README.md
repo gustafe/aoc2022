@@ -8,6 +8,14 @@ directory as the file.
 ## Solution comments in reverse order
 
 
+### Day 13: Distress Signal
+
+I took a punt on today and found a nice perlish solution in the daily solutions thread. Credit in source!
+
+Score: **0**
+
+Rating: 3/5
+
 ### Day 12: Hill Climbing Algorithm
 
 Basic pathfinding. I really need to put these things into a library or somethnig.

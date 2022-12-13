@@ -10,7 +10,7 @@ binmode(STDOUT, ':encoding(UTF-8)');
 
 I use Perl for all the solutions.
 
-Most assume the input data is in a file called `input.txt` in the same
+Most assume the input data is in a file called C<input.txt> in the same
 directory as the file.
 
 =head2 Solution comments in reverse order

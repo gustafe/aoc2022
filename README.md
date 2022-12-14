@@ -5,19 +5,17 @@ I use Perl for all the solutions.
 Most assume the input data is in a file called `input.txt` in the same
 directory as the file.
 
-## TODO
-
-- Publish day 14
-
 ## Solution comments in reverse order
 
 Running score: 25 / 28
 
-### Day 14
+### Day 14: Regolith Reservoir
 
-TODO: publish code
+Cobbled together a solution beased on 2018 day 17.
 
 Score: 2
+
+Rating: 4/5
 
 ### Day 13: Distress Signal
 

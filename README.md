@@ -7,7 +7,19 @@ directory as the file.
 
 ## Solution comments in reverse order
 
-Running score: 25 / 28
+Running score: 27 / 30
+
+### Day 15: Beacon Exclusion Zone
+
+A tough but fun one. I had flashbacks to the damn 3D beacons in ... 2019? (still not solved!) but this was much easier.
+
+Part 1 was binary search (both ends). I guessed the area would be contigous. And of course it was, as part 2 proved. 
+
+I figured out that if you checked the first cells outside the Manhattan circle you would have a much smaller search space. 
+
+Score: 2
+
+Rating: 4/5
 
 ### Day 14: Regolith Reservoir
 

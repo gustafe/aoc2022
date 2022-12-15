@@ -126,4 +126,6 @@ Score: 2
 
 Puzzle rating: 4/5, mostly because I'm proud of my input wrangling
 
+Leaderboard completion time: 7m58s
+
 =cut

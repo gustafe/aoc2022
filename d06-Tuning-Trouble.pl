@@ -93,5 +93,7 @@ Score: 2
 
 Puzzle rating: 3/5, too easy to make this really interesting.
 
+Leaderboard completion time: 2m25s
+
 =cut
 

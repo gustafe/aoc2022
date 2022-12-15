@@ -79,4 +79,6 @@ Score: 2
 
 Puzzle rating: 3/5. Nothing special.
 
+Leaderboard completion time: 2m05s
+
 =cut

@@ -8,7 +8,7 @@ use Modern::Perl '2015';
 # useful modules
 use List::Util qw/sum product/;
 use Data::Dump qw/dump/;
-use Test::More;
+use Test::More tests=>2;
 use Time::HiRes qw/gettimeofday tv_interval/;
 sub sec_to_hms;
 
@@ -94,7 +94,8 @@ for my $row ( keys %$seen ) {
         $count++ if $seen->{$row}{$col};
     }
 }
-
+say sec_to_hms( tv_interval($start_time) );
+$start_time = [gettimeofday];
 ### Part 2
 
 my $distances;
@@ -162,6 +163,8 @@ As usual, a bit fiddly with all the different directions and repeated code.
 Score: 2
 
 Rating: 3/5
+
+Leaderboard completion time: 10m12s
 
 =cut
 

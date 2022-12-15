@@ -130,4 +130,6 @@ Score: 2
 
 Rating: 4/5
 
+Leaderboard completion time: 14m08s
+
 =cut

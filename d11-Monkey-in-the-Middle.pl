@@ -132,5 +132,7 @@ Score: 2
 
 Rating: 4/5
 
+Leaderboard completion time: 18m05s
+
 =cut
 

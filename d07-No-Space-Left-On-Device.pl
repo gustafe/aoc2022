@@ -103,6 +103,8 @@ Score: B<1>
 
 Rating: 4/7, tough but fair
 
+Leaderboard completion time: 14m47s
+
 =cut
 
 

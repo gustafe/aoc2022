@@ -1,5 +1,5 @@
 #! /usr/bin/env perl
-# Advent of Code 2022 Day 4 - Camp Cleanup - part 1 / part 2 / complete solution
+# Advent of Code 2022 Day 4 - Camp Cleanup - complete solution
 # https://adventofcode.com/2022/day/4
 # https://gerikson.com/files/AoC2022/UNLICENSE
 ###########################################################
@@ -85,5 +85,7 @@ and subtract those from the total.
 Score: 2
 
 Puzzle rating: 3/5
+
+Leaderboard completion time: 3m22s
 
 =cut

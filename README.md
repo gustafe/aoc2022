@@ -21,6 +21,8 @@ Score: 2
 
 Rating: 4/5
 
+Leaderboard completion time: 27m14s
+
 ### Day 14: Regolith Reservoir
 
 Cobbled together a solution beased on 2018 day 17.
@@ -28,6 +30,8 @@ Cobbled together a solution beased on 2018 day 17.
 Score: 2
 
 Rating: 4/5
+
+Leaderboard completion time: 13m54s
 
 ### Day 13: Distress Signal
 
@@ -37,6 +41,8 @@ Score: **0**
 
 Rating: 3/5
 
+Leaderboard completion time: 12m56s
+
 ### Day 12: Hill Climbing Algorithm
 
 Basic pathfinding. I really need to put these things into a library or somethnig.
@@ -45,6 +51,8 @@ Score: 2
 
 Rating: 3/5
 
+Leaderboard completion time: 9m45s
+
 ### Day 11: Monkey in the Middle
 
 A fun Sunday problem!
@@ -52,6 +60,8 @@ A fun Sunday problem!
 Score: 2
 
 Rating: 4/5
+
+Leaderboard completion time: 18m05s
 
 ### Day 10: Cathode-Ray Tube
 
@@ -62,6 +72,8 @@ A fun problem. The test input was nicely designed to ensure I caught my off-by-o
 Score: 2
 
 Rating: 4/5
+
+Leaderboard completion time: 12m17s
 
 ### Day 9: Rope Bridge
 
@@ -77,6 +89,8 @@ Score: 2
 
 Rating: 4/5
 
+Leaderboard completion time: 14m08s
+
 ### Day 8: Treetop Tree House
 
 As usual, a bit fiddly with all the different directions and repeated code. 
@@ -84,6 +98,8 @@ As usual, a bit fiddly with all the different directions and repeated code.
 Score: 2
 
 Rating: 3/5
+
+Leaderboard completion time: 10m12s
 
 ### Day 7: No Space Left On Device
 
@@ -94,6 +110,8 @@ This was a tough one. I had the right basic idea but had to search for some hint
 Score: **1**
 
 Rating: 4/7, tough but fair
+
+Leaderboard completion time: 14m47s
 
 ### Day 6: Tuning Trouble
 
@@ -107,6 +125,8 @@ Score: 2
 
 Puzzle rating: 3/5, too easy to make this really interesting.
 
+Leaderboard completion time: 2m25s
+
 ### Day 5: Supply Stacks
 
 A typical AoC problem: massaging the input into a usable form is half the problem 😉
@@ -114,6 +134,8 @@ A typical AoC problem: massaging the input into a usable form is half the proble
 Score: 2
 
 Puzzle rating: 4/5, mostly because I'm proud of my input wrangling
+
+Leaderboard completion time: 7m58s
 
 ### Day 4: Camp Cleanup
 
@@ -127,6 +149,8 @@ Score: 2
 
 Puzzle rating: 3/5
 
+Leaderboard completion time: 3m22s
+
 ### Day 3: Rucksack Reorganization
 
 A bit fiddly with all the indices but not too hard once I worked it all out.
@@ -134,6 +158,8 @@ A bit fiddly with all the indices but not too hard once I worked it all out.
 Score: 2
 
 Puzzle rating: 3/5
+
+Leaderboard completion time: 5m24s
 
 ### Day 2: Rock Paper Scissors
 
@@ -147,6 +173,8 @@ Score: 2
 Puzzle rating: 2/5, personal opinion. There's too much logic scattered
 all over the place and even the "clever" solutions using modulo
 arithmetic just hardcode everything.
+
+Leaderboard completion time: 6m16s
 
 ### Day 1: Calorie Counting
 
@@ -169,4 +197,6 @@ you want anyway, so you might just as well use a list from the get-go.
 Score: 2
 
 Puzzle rating: 3/5. Nothing special.
+
+Leaderboard completion time: 2m05s
 

@@ -110,4 +110,6 @@ Puzzle rating: 2/5, personal opinion. There's too much logic scattered
 all over the place and even the "clever" solutions using modulo
 arithmetic just hardcode everything.
 
+Leaderboard completion time: 6m16s
+
 =cut

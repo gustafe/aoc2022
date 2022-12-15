@@ -123,4 +123,6 @@ Score: B<0>
 
 Rating: 3/5
 
+Leaderboard completion time: 12m56s
+
 =cut

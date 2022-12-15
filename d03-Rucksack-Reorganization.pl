@@ -113,4 +113,6 @@ Score: 2
 
 Puzzle rating: 3/5
 
+Leaderboard completion time: 5m24s
+
 =cut

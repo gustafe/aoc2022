@@ -1,6 +1,7 @@
 #! /usr/bin/env perl
 use Modern::Perl '2015';
 use Pod::Markdown;
+use Data::Dump qw/dump/;
 ###
 use utf8;
 
@@ -16,10 +17,15 @@ open(my $out_fh, ">", $readme) or die "can't open $readme for writing: $!";
 my $md_string;
 my @entries;
 my $score_sum;
+my %metadata;
 for my $f (sort {$b cmp $a} @files) {
     my $str;
     open( my $in_fh, '<:encoding(UTF-8)', "$dir/$f") or die "can't open $dir/$f for reading: $!";
-
+    #    warn "==> $f";
+    my ( $day, $title ) = $f =~ m/^d(\d+)\-(.*)/;
+    $title =~ s/\.pl$//;
+    $title =~ s/\-/\ /g;
+    ($metadata{$day}->{title} ) = $title;
     my $parser = Pod::Markdown->new(%opts);
     $parser->output_string($str);
     $parser->parse_file( $in_fh);
@@ -27,12 +33,36 @@ for my $f (sort {$b cmp $a} @files) {
     if ($str =~ m/^Score\:.*(\d+)/m) {
 	$score_sum += $1;
     }
+    if ($str =~ m/completion time: (.*)$/) {
+	my $time_tag = $1;
+	$metadata{$day}->{time_tag} = $time_tag;
+	my $seconds;
+	if ($time_tag =~ m/(\d+)m(\d+)s/) {
+	    $seconds = 60 * $1;
+	    $seconds += $2;
+	    
+	}
+	$metadata{$day}->{seconds} = $seconds;
+    }
+
     push @entries, $str;
     close $in_fh;
 }
+say dump \%metadata;
 my $top = shift @entries;
 say $out_fh $top;
-say $out_fh "Running score: $score_sum / ". (scalar (@entries))*2 ."\n";
+say $out_fh "Running score: $score_sum / ". (scalar (@entries))*2 ."\n\n";
+
+say $out_fh "### Top puzzles by difficulty  (leaderboard completion times)\n";
+my $count=1;
+for my $day (sort {$b<=>$a} keys %metadata) {
+    next unless defined $metadata{$day}->{time_tag};
+    next if $count>3;
+    say $out_fh "* Day $day - $metadata{$day}->{title}: $metadata{$day}->{time_tag}"; 
+    $count++;
+}
+say $out_fh '';
+
 for my $e (@entries) {
     say $out_fh $e;
 }

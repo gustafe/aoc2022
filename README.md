@@ -9,6 +9,13 @@ directory as the file.
 
 Running score: 27 / 30
 
+
+### Top puzzles by difficulty  (leaderboard completion times)
+
+* Day 15 - Beacon Exclusion Zone: 27m14s
+* Day 14 - Regolith Reservoir: 13m54s
+* Day 13 - Distress Signal: 12m56s
+
 ### Day 15: Beacon Exclusion Zone
 
 A tough but fun one. I had flashbacks to the damn 3D beacons in ... 2019? (still not solved!) but this was much easier.

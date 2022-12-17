@@ -7,14 +7,22 @@ directory as the file.
 
 ## Solution comments in reverse order
 
-Running score: 27 / 30
+Running score: 27 / 34
 
 
 ### Top puzzles by difficulty  (leaderboard completion times)
 
+* Day 17 - todo: 40m48s
+* Day 16 - todo: 1h04m17s
 * Day 15 - Beacon Exclusion Zone: 27m14s
-* Day 14 - Regolith Reservoir: 13m54s
-* Day 13 - Distress Signal: 12m56s
+
+### Day 17: TODO
+
+Leaderboard completion time: 40m48s
+
+### Day 16: TODO
+
+Leaderboard completion time: 1h04m17s
 
 ### Day 15: Beacon Exclusion Zone
 

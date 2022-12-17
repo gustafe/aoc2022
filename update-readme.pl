@@ -37,10 +37,15 @@ for my $f (sort {$b cmp $a} @files) {
 	my $time_tag = $1;
 	$metadata{$day}->{time_tag} = $time_tag;
 	my $seconds;
+	
 	if ($time_tag =~ m/(\d+)m(\d+)s/) {
 	    $seconds = 60 * $1;
 	    $seconds += $2;
 	    
+	} elsif ($time_tag =~ m/(\d+)h(\d+)m(\d+)s/) {
+	    $seconds = 60 * 60 * $1;
+	    $seconds += 60 * $2;
+	    $seconds += $3;
 	}
 	$metadata{$day}->{seconds} = $seconds;
     }

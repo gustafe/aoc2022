@@ -12,9 +12,9 @@ Running score: 29 / 36
 
 ### Top puzzles by difficulty  (leaderboard completion times)
 
-* Day 18 - Boiling Boulders: 12m29s
-* Day 17 - todo: 40m48s
 * Day 16 - todo: 1h04m17s
+* Day 17 - todo: 40m48s
+* Day 15 - Beacon Exclusion Zone: 27m14s
 
 ### Day 18: Boiling Boulders
 

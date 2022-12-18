@@ -36,16 +36,19 @@ for my $f (sort {$b cmp $a} @files) {
     if ($str =~ m/completion time: (.*)$/) {
 	my $time_tag = $1;
 	$metadata{$day}->{time_tag} = $time_tag;
-	my $seconds;
+	my $seconds=0;
 	
-	if ($time_tag =~ m/(\d+)m(\d+)s/) {
-	    $seconds = 60 * $1;
-	    $seconds += $2;
-	    
-	} elsif ($time_tag =~ m/(\d+)h(\d+)m(\d+)s/) {
+	if ($time_tag =~ m/(\d+)h(\d+)m(\d+)s/) {
 	    $seconds = 60 * 60 * $1;
 	    $seconds += 60 * $2;
 	    $seconds += $3;
+	    
+	} elsif ($time_tag =~ m/(\d+)m(\d+)s/) {
+
+
+	    $seconds = 60 * $1;
+	    $seconds += $2;
+
 	}
 	$metadata{$day}->{seconds} = $seconds;
     }
@@ -60,7 +63,7 @@ say $out_fh "Running score: $score_sum / ". (scalar (@entries))*2 ."\n\n";
 
 say $out_fh "### Top puzzles by difficulty  (leaderboard completion times)\n";
 my $count=1;
-for my $day (sort {$b<=>$a} keys %metadata) {
+for my $day (sort {$metadata{$b}->{seconds}<=>$metadata{$a}->{seconds}} keys %metadata) {
     next unless defined $metadata{$day}->{time_tag};
     next if $count>3;
     say $out_fh "* Day $day - $metadata{$day}->{title}: $metadata{$day}->{time_tag}"; 

@@ -10,11 +10,26 @@ directory as the file.
 Running score: 29 / 36
 
 
-### Top puzzles by difficulty  (leaderboard completion times)
+### Puzzles by difficulty  (leaderboard completion times)
 
 * Day 16 - todo: 1h04m17s
 * Day 17 - todo: 40m48s
 * Day 15 - Beacon Exclusion Zone: 27m14s
+* Day 11 - Monkey in the Middle: 18m05s
+* Day 07 - No Space Left On Device: 14m47s
+* Day 09 - Rope Bridge: 14m08s
+* Day 14 - Regolith Reservoir: 13m54s
+* Day 13 - Distress Signal: 12m56s
+* Day 18 - Boiling Boulders: 12m29s
+* Day 10 - Cathode Ray Tube: 12m17s
+* Day 08 - Treetop Tree House: 10m12s
+* Day 12 - Hill Climbing Algorithm: 9m45s
+* Day 05 - Supply Stacks: 7m58s
+* Day 02 - Rock Paper Scissors: 6m16s
+* Day 03 - Rucksack Reorganization: 5m24s
+* Day 04 - Camp Cleanup: 3m22s
+* Day 06 - Tuning Trouble: 2m25s
+* Day 01 - Calorie Counting: 2m05s
 
 ### Day 18: Boiling Boulders
 

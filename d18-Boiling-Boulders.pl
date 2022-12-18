@@ -134,9 +134,13 @@ sub sec_to_hms {
 
 =encoding utf8
 
-Finally back on track and finished 2 starts within the first 10,000 for the first time this year (oh how my standards have fallen).
+Finally back on track and I was among the first 10,000 who got 2 stars
+for the first time this year (oh how my standards have fallen).
 
-My first attempt at part 1 was embarrasingly complex, I found a simpler way when starting on part 2. In that case I just flood fill from each "skin cube" until I either run out of space or reach the edge of the 3D map.
+My first attempt at part 1 was embarrasingly complex, I found a
+simpler way when starting on part 2. In that case I just flood fill
+from each "skin cube" until I either run out of space or reach the
+edge of the 3D map.
 
 Runtime is around 15s.
 

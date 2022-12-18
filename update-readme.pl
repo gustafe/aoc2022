@@ -57,6 +57,9 @@ for my $f (sort {$b cmp $a} @files) {
     close $in_fh;
 }
 say dump \%metadata;
+if ($metadata{31}) {
+    $metadata{31}->{seconds}=0;
+}
 my $top = shift @entries;
 say $out_fh $top;
 say $out_fh "Running score: $score_sum / ". (scalar (@entries))*2 ."\n\n";

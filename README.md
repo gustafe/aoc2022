@@ -7,14 +7,28 @@ directory as the file.
 
 ## Solution comments in reverse order
 
-Running score: 27 / 34
+Running score: 29 / 36
 
 
 ### Top puzzles by difficulty  (leaderboard completion times)
 
+* Day 18 - Boiling Boulders: 12m29s
 * Day 17 - todo: 40m48s
 * Day 16 - todo: 1h04m17s
-* Day 15 - Beacon Exclusion Zone: 27m14s
+
+### Day 18: Boiling Boulders
+
+Finally back on track and finished 2 starts within the first 10,000 for the first time this year (oh how my standards have fallen).
+
+My first attempt at part 1 was embarrasingly complex, I found a simpler way when starting on part 2. In that case I just flood fill from each "skin cube" until I either run out of space or reach the edge of the 3D map.
+
+Runtime is around 15s.
+
+Score: 2
+
+Rating: 4/5
+
+Leaderboard completion time: 12m29s
 
 ### Day 17: TODO
 

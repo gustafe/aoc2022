@@ -7,12 +7,13 @@ directory as the file.
 
 ## Solution comments in reverse order
 
-Running score: 29 / 36
+Running score: 29 / 38
 
 
 ### Puzzles by difficulty  (leaderboard completion times)
 
 * Day 16 - todo: 1h04m17s
+* Day 19 - todo: 57m45s
 * Day 17 - todo: 40m48s
 * Day 15 - Beacon Exclusion Zone: 27m14s
 * Day 11 - Monkey in the Middle: 18m05s
@@ -30,6 +31,10 @@ Running score: 29 / 36
 * Day 04 - Camp Cleanup: 3m22s
 * Day 06 - Tuning Trouble: 2m25s
 * Day 01 - Calorie Counting: 2m05s
+
+### Day 19: TODO
+
+Leaderboard completion time: 57m45s
 
 ### Day 18: Boiling Boulders
 

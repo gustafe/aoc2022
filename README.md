@@ -12,9 +12,9 @@ Running score: 29 / 38
 
 ### Puzzles by difficulty  (leaderboard completion times)
 
-* Day 16 - todo: 1h04m17s
-* Day 19 - todo: 57m45s
-* Day 17 - todo: 40m48s
+* Day 16 - Proboscidea Volcanium: 1h04m17s
+* Day 19 - Not Enough Minerals: 57m45s
+* Day 17 - Pyroclastic Flow: 40m48s
 * Day 15 - Beacon Exclusion Zone: 27m14s
 * Day 11 - Monkey in the Middle: 18m05s
 * Day 07 - No Space Left On Device: 14m47s
@@ -32,7 +32,9 @@ Running score: 29 / 38
 * Day 06 - Tuning Trouble: 2m25s
 * Day 01 - Calorie Counting: 2m05s
 
-### Day 19: TODO
+### Day 19: Not Enough Minerals
+
+TODO
 
 Leaderboard completion time: 57m45s
 
@@ -54,11 +56,15 @@ Rating: 4/5
 
 Leaderboard completion time: 12m29s
 
-### Day 17: TODO
+### Day 17: Pyroclastic Flow
+
+TODO
 
 Leaderboard completion time: 40m48s
 
-### Day 16: TODO
+### Day 16: Proboscidea Volcanium
+
+TODO
 
 Leaderboard completion time: 1h04m17s
 

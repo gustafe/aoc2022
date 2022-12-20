@@ -7,7 +7,7 @@ directory as the file.
 
 ## Solution comments in reverse order
 
-Running score: 29 / 38
+Running score: 31 / 40
 
 
 ### Puzzles by difficulty  (leaderboard completion times)
@@ -16,6 +16,7 @@ Running score: 29 / 38
 * Day 19 - Not Enough Minerals: 57m45s
 * Day 17 - Pyroclastic Flow: 40m48s
 * Day 15 - Beacon Exclusion Zone: 27m14s
+* Day 20 - Grove Positioning System: 21m14s
 * Day 11 - Monkey in the Middle: 18m05s
 * Day 07 - No Space Left On Device: 14m47s
 * Day 09 - Rope Bridge: 14m08s
@@ -31,6 +32,16 @@ Running score: 29 / 38
 * Day 04 - Camp Cleanup: 3m22s
 * Day 06 - Tuning Trouble: 2m25s
 * Day 01 - Calorie Counting: 2m05s
+
+### Day 20: Grove Positioning System
+
+Todo: publish code
+
+Score: 2
+
+Rating: 3/5
+
+Leaderboard completion time: 21m14s
 
 ### Day 19: Not Enough Minerals
 

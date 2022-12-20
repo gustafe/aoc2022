@@ -69,7 +69,7 @@ my $count=1;
 for my $day (sort {$metadata{$b}->{seconds}<=>$metadata{$a}->{seconds}} keys %metadata) {
     next unless defined $metadata{$day}->{time_tag};
 #    next if $count>3;
-    say $out_fh "* Day $day - $metadata{$day}->{title}: $metadata{$day}->{time_tag}"; 
+    say $out_fh "1. Day $day - $metadata{$day}->{title}: $metadata{$day}->{time_tag}"; 
     $count++;
 }
 say $out_fh '';

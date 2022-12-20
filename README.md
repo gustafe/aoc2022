@@ -42,7 +42,8 @@ Running score: 31 / 40
 
 ### Day 20: Grove Positioning System
 
-Todo: publish code
+I am not a fan of `splice` but with some trial and error this came
+together in the end.
 
 Score: 2
 

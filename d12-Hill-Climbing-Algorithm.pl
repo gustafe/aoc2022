@@ -124,7 +124,8 @@ sub sec_to_hms {
 
 =encoding utf8
 
-Basic pathfinding. I really need to put these things into a library or somethnig.
+Basic pathfinding. I really need to put these things into a library or
+something.
 
 Score: 2
 

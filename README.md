@@ -5,6 +5,13 @@ I use Perl for all the solutions.
 Most assume the input data is in a file called `input.txt` in the same
 directory as the file.
 
+## TODO
+
+- complete day 16
+- complete day 17
+- complete day 19
+- publish day 20
+
 ## Solution comments in reverse order
 
 Running score: 31 / 40
@@ -115,7 +122,8 @@ Leaderboard completion time: 12m56s
 
 ### Day 12: Hill Climbing Algorithm
 
-Basic pathfinding. I really need to put these things into a library or somethnig.
+Basic pathfinding. I really need to put these things into a library or
+something.
 
 Score: 2
 

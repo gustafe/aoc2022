@@ -14,7 +14,7 @@ directory as the file.
 
 ## Solution comments in reverse order
 
-Running score: 32 / 42
+Running score: 33 / 42
 
 
 ### Puzzles by difficulty  (leaderboard completion times)
@@ -25,7 +25,7 @@ Running score: 32 / 42
 1. Day 15 - Beacon Exclusion Zone: 27m14s
 1. Day 20 - Grove Positioning System: 21m14s
 1. Day 11 - Monkey in the Middle: 18m05s
-1. Day 21 - Monkey Math 1: 16m15s
+1. Day 21 - Monkey Math: 16m15s
 1. Day 07 - No Space Left On Device: 14m47s
 1. Day 09 - Rope Bridge: 14m08s
 1. Day 14 - Regolith Reservoir: 13m54s
@@ -43,7 +43,12 @@ Running score: 32 / 42
 
 ### Day 21: Monkey Math, part 1
 
-Score: 1
+No need to faff about with fancy trees and solvers when you can just
+do a brute force binary search for the value you want...
+
+Score: 2
+
+Rating: 4/5
 
 Leaderboard completion time: 16m15s
 

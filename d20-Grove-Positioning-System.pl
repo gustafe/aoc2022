@@ -46,7 +46,10 @@ for my $round ( 1 .. $MAX_ITER ) {
         my $el   = splice( @map, $pos, 1 );
         my $dest = ( $pos + $el ) % @map;
         splice( @map, $dest, 0, $el );
-        splice( @indexes, $pos, 1 );
+
+	#update index list
+
+	splice( @indexes, $pos, 1 );
         splice( @indexes, $dest, 0, $i );
     }
 }

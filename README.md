@@ -14,7 +14,7 @@ directory as the file.
 
 ## Solution comments in reverse order
 
-Running score: 31 / 40
+Running score: 32 / 42
 
 
 ### Puzzles by difficulty  (leaderboard completion times)
@@ -25,6 +25,7 @@ Running score: 31 / 40
 1. Day 15 - Beacon Exclusion Zone: 27m14s
 1. Day 20 - Grove Positioning System: 21m14s
 1. Day 11 - Monkey in the Middle: 18m05s
+1. Day 21 - Monkey Math 1: 16m15s
 1. Day 07 - No Space Left On Device: 14m47s
 1. Day 09 - Rope Bridge: 14m08s
 1. Day 14 - Regolith Reservoir: 13m54s
@@ -39,6 +40,12 @@ Running score: 31 / 40
 1. Day 04 - Camp Cleanup: 3m22s
 1. Day 06 - Tuning Trouble: 2m25s
 1. Day 01 - Calorie Counting: 2m05s
+
+### Day 21: Monkey Math, part 1
+
+Score: 1
+
+Leaderboard completion time: 16m15s
 
 ### Day 20: Grove Positioning System
 

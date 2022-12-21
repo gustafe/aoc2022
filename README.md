@@ -10,7 +10,6 @@ directory as the file.
 - complete day 16
 - complete day 17
 - complete day 19
-- publish day 20
 
 ## Solution comments in reverse order
 
@@ -41,7 +40,7 @@ Running score: 33 / 42
 1. Day 06 - Tuning Trouble: 2m25s
 1. Day 01 - Calorie Counting: 2m05s
 
-### Day 21: Monkey Math, part 1
+### Day 21: Monkey Math
 
 No need to faff about with fancy trees and solvers when you can just
 do a brute force binary search for the value you want...

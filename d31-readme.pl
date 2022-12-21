@@ -23,8 +23,6 @@ directory as the file.
 
 =item complete day 19
 
-=item publish day 20
-
 =back
 
 =head2 Solution comments in reverse order

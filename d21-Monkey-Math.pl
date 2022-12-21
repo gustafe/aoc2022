@@ -130,7 +130,7 @@ sub sec_to_hms {
 
 =pod
 
-=head3 Day 21: Monkey Math, part 1
+=head3 Day 21: Monkey Math
 
 =encoding utf8
 

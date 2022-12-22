@@ -13,11 +13,12 @@ directory as the file.
 
 ## Solution comments in reverse order
 
-Running score: 33 / 42
+Running score: 33 / 44
 
 
 ### Puzzles by difficulty  (leaderboard completion times)
 
+1. Day 22 - Monkey Map: 1h14m31s
 1. Day 16 - Proboscidea Volcanium: 1h04m17s
 1. Day 19 - Not Enough Minerals: 57m45s
 1. Day 17 - Pyroclastic Flow: 40m48s
@@ -39,6 +40,12 @@ Running score: 33 / 42
 1. Day 04 - Camp Cleanup: 3m22s
 1. Day 06 - Tuning Trouble: 2m25s
 1. Day 01 - Calorie Counting: 2m05s
+
+### Day 22: Monkey Map
+
+TODO
+
+Leaderboard completion time: 1h14m31s
 
 ### Day 21: Monkey Math
 

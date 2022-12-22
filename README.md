@@ -10,6 +10,7 @@ directory as the file.
 - complete day 16
 - complete day 17
 - complete day 19
+- complete day 22
 
 ## Solution comments in reverse order
 

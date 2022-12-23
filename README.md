@@ -12,17 +12,8 @@ directory as the file.
 - complete day 19
 - complete day 22
 - complete day 23
-=back
 
 ## Solution comments in reverse order
-
-# POD ERRORS
-
-Hey! **The above document had some coding errors, which are explained below:**
-
-- Around line 31:
-
-    You forgot a '=back' before '=head2'
 
 Running score: 33 / 46
 

@@ -14,7 +14,7 @@ directory as the file.
 
 ## Solution comments in reverse order
 
-Running score: 33 / 44
+Running score: 33 / 46
 
 
 ### Puzzles by difficulty  (leaderboard completion times)
@@ -24,6 +24,7 @@ Running score: 33 / 44
 1. Day 19 - Not Enough Minerals: 57m45s
 1. Day 17 - Pyroclastic Flow: 40m48s
 1. Day 15 - Beacon Exclusion Zone: 27m14s
+1. Day 23 - Unstable Diffusion: 24m43s
 1. Day 20 - Grove Positioning System: 21m14s
 1. Day 11 - Monkey in the Middle: 18m05s
 1. Day 21 - Monkey Math: 16m15s
@@ -41,6 +42,12 @@ Running score: 33 / 44
 1. Day 04 - Camp Cleanup: 3m22s
 1. Day 06 - Tuning Trouble: 2m25s
 1. Day 01 - Calorie Counting: 2m05s
+
+### Day 23: Unstable Diffusion
+
+TODO.
+
+Leaderboard completion time: 24m43s
 
 ### Day 22: Monkey Map
 

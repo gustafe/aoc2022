@@ -11,20 +11,30 @@ directory as the file.
 - complete day 17
 - complete day 19
 - complete day 22
+- complete day 23
+=back
 
 ## Solution comments in reverse order
+
+# POD ERRORS
+
+Hey! **The above document had some coding errors, which are explained below:**
+
+- Around line 31:
+
+    You forgot a '=back' before '=head2'
 
 Running score: 33 / 46
 
 
 ### Puzzles by difficulty  (leaderboard completion times)
 
-1. Day 22 - Monkey Map: 1h14m31s
-1. Day 16 - Proboscidea Volcanium: 1h04m17s
-1. Day 19 - Not Enough Minerals: 57m45s
-1. Day 17 - Pyroclastic Flow: 40m48s
+1. Day 22 - TODO Monkey Map: 1h14m31s
+1. Day 16 - TODO Proboscidea Volcanium: 1h04m17s
+1. Day 19 - TODO Not Enough Minerals: 57m45s
+1. Day 17 - TODO Pyroclastic Flow: 40m48s
 1. Day 15 - Beacon Exclusion Zone: 27m14s
-1. Day 23 - Unstable Diffusion: 24m43s
+1. Day 23 - TODO Unstable Diffusion: 24m43s
 1. Day 20 - Grove Positioning System: 21m14s
 1. Day 11 - Monkey in the Middle: 18m05s
 1. Day 21 - Monkey Math: 16m15s

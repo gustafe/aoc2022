@@ -11,7 +11,6 @@ directory as the file.
 - complete day 17
 - complete day 19
 - complete day 22
-- complete day 23
 
 ## Solution comments in reverse order
 
@@ -25,7 +24,7 @@ Running score: 33 / 46
 1. Day 19 - TODO Not Enough Minerals: 57m45s
 1. Day 17 - TODO Pyroclastic Flow: 40m48s
 1. Day 15 - Beacon Exclusion Zone: 27m14s
-1. Day 23 - TODO Unstable Diffusion: 24m43s
+1. Day 23 - Unstable Diffusion: 24m43s
 1. Day 20 - Grove Positioning System: 21m14s
 1. Day 11 - Monkey in the Middle: 18m05s
 1. Day 21 - Monkey Math: 16m15s
@@ -46,7 +45,7 @@ Running score: 33 / 46
 
 ### Day 23: Unstable Diffusion
 
-TODO.
+After figuring out  that I wasn't outputting empty lines when debugging I finally got this to work. 
 
 Leaderboard completion time: 24m43s
 

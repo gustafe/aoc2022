@@ -25,8 +25,6 @@ directory as the file.
 
 =item complete day 22
 
-=item complete day 23
-
 =back
 
 =head2 Solution comments in reverse order

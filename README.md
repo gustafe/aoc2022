@@ -11,10 +11,11 @@ directory as the file.
 - complete day 17
 - complete day 19
 - complete day 22
+- complete day 24
 
 ## Solution comments in reverse order
 
-Running score: 33 / 46
+Running score: 33 / 48
 
 
 ### Puzzles by difficulty  (leaderboard completion times)
@@ -24,6 +25,7 @@ Running score: 33 / 46
 1. Day 19 - TODO Not Enough Minerals: 57m45s
 1. Day 17 - TODO Pyroclastic Flow: 40m48s
 1. Day 15 - Beacon Exclusion Zone: 27m14s
+1. Day 24 - TODO Blizzard Basin: 26m48s
 1. Day 23 - Unstable Diffusion: 24m43s
 1. Day 20 - Grove Positioning System: 21m14s
 1. Day 11 - Monkey in the Middle: 18m05s
@@ -42,6 +44,12 @@ Running score: 33 / 46
 1. Day 04 - Camp Cleanup: 3m22s
 1. Day 06 - Tuning Trouble: 2m25s
 1. Day 01 - Calorie Counting: 2m05s
+
+### Day 24: Blizzard Basin
+
+TODO
+
+Leaderboard completion time: 26m48s
 
 ### Day 23: Unstable Diffusion
 

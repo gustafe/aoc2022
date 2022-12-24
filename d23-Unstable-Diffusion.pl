@@ -215,6 +215,10 @@ sub sec_to_hms {
 
 After figuring out  that I wasn't outputting empty lines when debugging I finally got this to work. 
 
+Score: 2
+
+Rating: 4/5
+
 Leaderboard completion time: 24m43s
 
 =cut

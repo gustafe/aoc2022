@@ -15,7 +15,7 @@ directory as the file.
 
 ## Solution comments in reverse order
 
-Running score: 33 / 48
+Running score: 35 / 48
 
 
 ### Puzzles by difficulty  (leaderboard completion times)
@@ -54,6 +54,10 @@ Leaderboard completion time: 26m48s
 ### Day 23: Unstable Diffusion
 
 After figuring out  that I wasn't outputting empty lines when debugging I finally got this to work. 
+
+Score: 2
+
+Rating: 4/5
 
 Leaderboard completion time: 24m43s
 

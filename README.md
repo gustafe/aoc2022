@@ -15,7 +15,7 @@ directory as the file.
 
 ## Solution comments in reverse order
 
-Running score: 35 / 48
+Running score: 37 / 50
 
 
 ### Puzzles by difficulty  (leaderboard completion times)
@@ -38,12 +38,23 @@ Running score: 35 / 48
 1. Day 10 - Cathode Ray Tube: 12m17s
 1. Day 08 - Treetop Tree House: 10m12s
 1. Day 12 - Hill Climbing Algorithm: 9m45s
+1. Day 25 - Full of Hot Air: 8m30s
 1. Day 05 - Supply Stacks: 7m58s
 1. Day 02 - Rock Paper Scissors: 6m16s
 1. Day 03 - Rucksack Reorganization: 5m24s
 1. Day 04 - Camp Cleanup: 3m22s
 1. Day 06 - Tuning Trouble: 2m25s
 1. Day 01 - Calorie Counting: 2m05s
+
+### Day 25: Full of Hot Air
+
+A fun final problem!
+
+Score: 2
+
+Rating: 3/5
+
+Leaderboard completion time: 8m30s
 
 ### Day 24: Blizzard Basin
 
